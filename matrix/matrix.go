@@ -3,7 +3,7 @@ package matrix
 import (
 	"fmt"
 )
-//func
+//func 
 func spiralTraverse(m [][]string) {
 	rowSize := len(m[0])
 	columnSize := len(m)
@@ -33,9 +33,9 @@ func spiralTraverse(m [][]string) {
 			}
 		case 2: //Bottom path
 			if column > rowSize - row - 1 {
-				column-- //Go left
+				column-- // Go left
 			} else {
-				row-- //Turn up
+				row-- //  Turn up
 				dir++
 				fmt.Println()
 			}
