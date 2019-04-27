@@ -4,6 +4,7 @@
 
 package search
 
+//initSearch
 func initSearch(sorted_array []int) (int, int) {
 	if sorted_array == nil {
 		panic("Nil array.")
@@ -30,7 +31,6 @@ func NonRecursionBinarySearch(sorted_array []int, target int) int {
 	}
 	return -1
 }
-
 func RecursionBinarySearch(sorted_array []int, target int) int {
 	low, high := initSearch(sorted_array)
 	return recursion_search(sorted_array, target, low, high)
