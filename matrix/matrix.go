@@ -3,7 +3,7 @@ package matrix
 import (
 	"fmt"
 )
-//func 
+//func spiralTraverse
 func spiralTraverse(m [][]string) {
 	rowSize := len(m[0])
 	columnSize := len(m)
