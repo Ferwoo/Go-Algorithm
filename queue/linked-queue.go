@@ -22,7 +22,7 @@ func (queue *LinkedQueue) Peek() interface{} {
 	}
 	return queue.head.value
 }
-
+//添加
 func (queue *LinkedQueue) Add(value interface{}) {
 	new_node := &node{value, queue.tail, nil}
 	if queue.tail == nil {
@@ -35,7 +35,7 @@ func (queue *LinkedQueue) Add(value interface{}) {
 	queue.size++
 	new_node = nil
 }
-
+//移动队列
 func (queue *LinkedQueue) Remove() {
 	if queue.head == nil {
 		panic("Empty queue.")
