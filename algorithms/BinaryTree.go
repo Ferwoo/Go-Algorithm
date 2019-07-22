@@ -5,7 +5,7 @@ import (
 
 )
 
-//定义二叉树
+//定义二叉树结构体
 type BinaryTree struct {
 	Data interface{}
 	Lchild *BinaryTree
@@ -18,7 +18,7 @@ func NewBinaryTree(data interface{}) *BinaryTree  {
 
 }
 
-//先序遍历
+//先序遍历接口
 func (bt *BinaryTree) PreOrder() []interface{} {
 	t:=bt
 	stack :=NewStack(reflect.TypeOf(bt))
@@ -37,7 +37,7 @@ func (bt *BinaryTree) PreOrder() []interface{} {
 	}
 	return res
 }
-//中序遍历
+//中序遍历接口
 func (bt *BinaryTree) InOrder() []interface{}  {
       t :=bt
       stack :=NewStack(reflect.TypeOf(bt))
@@ -56,7 +56,7 @@ func (bt *BinaryTree) InOrder() []interface{}  {
 	  }
 	  return res
 }
-//后序遍历
+//后序遍历接口
 func (bt *BinaryTree) PostOrder() []interface{}  {
 	t :=bt
 	stack :=NewStack(reflect.TypeOf(bt))
